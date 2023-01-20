@@ -8,41 +8,39 @@
 </head>
 <body>
     <style>
-        #cuadrado {
-  width: 150px;           
-  height: 150px;          
-  background: red;        
+        #caja {
+  width: 100px;           
+  height: 100px;          
+  background: red;
+  position: relative;        
   border: 1px solid #000; 
 }
     </style>
-    <div id="cuadrado"></div>
+    <div id="caja"></div>
 
-    <script>
-       var cuadrado =document.getElementById("cuadrado").addEventListener("keydown", pulsa);
-       var velocidad = 50;
-       var top = 0;
-       var left = 0;
+ <script>
+var caja = document.getElementById("caja");
 
-       function pulsa (e){
-        if (e.key == "ArrowLeft"){
-            left -= velocidad;
-            cuadrado.style.marginLeft = `${left}px`;
-        }
-        else if (e.key == "ArrowLeft"){
-            left += velocidad;
-            cuadrado.style.marginLeft = `${left}px`;
-       }
-       else if (e.key == "ArrowUp"){
-            top -= velocidad;
-            cuadrado.style.marginTop = `${top}px`;
-       }
-       else if (e.key == "ArrowUp"){
-            top += velocidad;
-            cuadrado.style.marginTop = `${top}px`;
-       }
+var x = 0;
+var y = 0;
 
-}
-
+document.addEventListener('keydown', k =>{
+    if (k.code == 'ArrowUp' || k.code == 'Numpad8'){
+        caja.style.top = (y -= 5) + "px";
+    }
+    else if (k.code == 'ArrowDown' || k.code == 'Numpad2'){
+        caja.style.top = (y += 5) + "px";
+    }
+    else if (k.code == 'ArrowLeft' || k.code == 'Numpad4'){
+        caja.style.left = (y -= 5) + "px";
+    }
+    else if (k.code == 'ArrowRight' || k.code == 'Numpad6'){
+        caja.style.left = (y += 5) + "px";
+    }
+    
+        
+    
+});
 
     
     </script>
