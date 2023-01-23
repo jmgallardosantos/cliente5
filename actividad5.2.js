@@ -1,25 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>actividad5.2</title>
-    <script type="text/javascript" src="actividad5.2.js"></script>
-</head>
-<body>
-    <style>
-        #caja {
-  width: 100px;           
-  height: 100px;          
-  background: red;
-  position: relative;        
-  border: 1px solid #000; 
-}
-    </style>
-    <div id="caja"></div>
-<script>
-
 var caja = document.getElementById("caja");
 
 var x = 0;
@@ -40,8 +18,3 @@ document.addEventListener('keydown', k =>{
     }
     
     });
-
-</script>
-
-</body>
-</html>

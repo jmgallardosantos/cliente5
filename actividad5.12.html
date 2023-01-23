@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad5.12</title>
+    <script type="text/javascript" src="actividad5.12.js"></script>
+</head>
+<body>
+    <form action="" method="">
+        <fieldset> <legend> Datos personales </legend>
+            <p>DNI:       <input type="text" name="dni" pattern="[0-9]{8}[A-Za-z]{1}" required/></p>
+            <p>Nombre:    <input type="text" name="nombre" size="35" pattern="([a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ']{2,25})\s([a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ']{2,25})\s([a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ']{2,25})"  required /></p>
+            <p>F.Nac:     <input type="text" name="fecha_nacimiento" pattern="^([0-2][0-9]|3[0-1])(\/|-)(0[1-9]|1[0-2])\2(\d{4})$"  required/></p>
+            <p>E-Mail:    <input type="email" name="email" placeholder="example@example.com" size="30" pattern="[a-zA-Z0-9\.]([^ @&%$\\\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.]){1,2}[a-zA-Z]{2,4}([\.][a-zA-Z]{3}" required></p>
+            <p>Pag.Web:   <input type="url" name="url" placeholder="https://example.com" size="30"  required></p> 
+            <p>Contraseña:    <input type="password" name="clave1" id="clave1" placeholder="introduce clave" pattern="[A-Za-z\d]{8}" required></p>
+            <p>Confirmar Contraseña:   <input type="password" name="clave2" id="clave2" placeholder="introduce clave" pattern="[A-Za-z\d]{8}" required></p>   
+            <input class="azul" type="submit" name="guardar" value="Guardar"  >
+            <input class="azul" type="submit" name="ver" value="Ver"  >
+
+            <script>
+                
+            </script>
+
+        </body>
+</html>
